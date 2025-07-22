@@ -1,5 +1,65 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(255, 89, 89);
+  margin-top: 20px;
+}
+.size {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(../images/donation13.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(95%);
+}
+.banner {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 80px 0;
+ 
+}
+.banner h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner p {
+  font-size: 1.12rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* responsive */
+/* laptop/tab */
+@media (max-width: 992px) {
+  .banner {
+    padding: 50px 10px;
+  }
+}
+/* mobile */
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .banner h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 }
