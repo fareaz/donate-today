@@ -45,6 +45,59 @@ header {
   margin-bottom: 20px;
   font-weight: 500;
 }
+/* main */
+/* section-1 */
+.section-1{
+    text-align: center;
+    margin: 100px auto;
+}
+.today-content{
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 20px;
+}
+.today-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.today-content p{
+    color:rgb(112, 112, 112) ;
+    font-size: 18px;
+}
+.tk-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 40px 0;
+}
+.tk {
+    border-radius:8px ;
+    background-color: rgb(250, 250, 250);
+    color:rgb(112, 112, 112) ;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 40px 20px;
+    flex: 1;
+}
+.tk:nth-child(2){
+    background-color: rgb(255, 238, 238);
+    border: 2px solid rgb(255, 89, 89);
+    color: rgb(255, 89, 89);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 /* laptop/tab */
@@ -52,6 +105,12 @@ header {
   .banner {
     padding: 50px 10px;
   }
+  .tk-container{ 
+    grid-template-columns: repeat(3,1fr);
+}
+.tk-container:nth-child(4){
+    margin-left: 100px;
+}
 }
 /* mobile */
 @media (max-width: 768px) {
@@ -63,4 +122,6 @@ header {
   font-size: 2rem;
   line-height: 2rem;
 }
+
+
 }
