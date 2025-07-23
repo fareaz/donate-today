@@ -86,12 +86,108 @@ header {
     border: 2px solid rgb(255, 89, 89);
     color: rgb(255, 89, 89);
 }
+/* section-2 */
+.section-2{
+    padding: 20px;
+}
+.section-2-content{
+    text-align: center;
+}
+.section-2-content h2{
+    font-size:3rem ;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 10px;
+}
+.section-2-content p{
+    color: rgb(112, 112, 112);
+    margin-bottom: 10px;
+}
+.section-2-container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.section-2-container .bg{
+    background-color:rgba(255, 89, 89, 0.1);
+}
 
-
-
-
-
-
+.section-2-container .bg-1{
+    background-color:rgb(255, 244, 214);
+}
+.card{
+    background-color: rgba(79, 157, 166, 0.1);
+    border-radius: 8px;
+    padding: 40px 20px;
+    flex: 1;
+}
+.card img{
+    width: 48.12px;
+    height: 42.22px;
+}
+.card h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card p{
+    color:rgb(112, 112, 112) ;
+}
+/* section-3 */
+.section-3{
+    text-align: center;
+    padding: 20px;
+}
+.section-3 h2{
+    font-size:3rem ;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 10px;
+}
+.section-3 p{
+    color: rgb(112, 112, 112);
+    margin-bottom: 10px;
+}
+.input-container{
+   background-color:rgb(255, 244, 214);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:50px 20px;
+   
+   border-radius: 8px;
+}
+.input-container [type="email"]{
+    padding: 10px 8px ;
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(217, 217, 217);
+    border: none;
+}
+.input-container [type="submit"]{
+    padding: 10px 20px ;
+    border-radius: 0px 5px 5px 0px;
+    background:rgb(255, 89, 89);
+    border: none;
+    color: aliceblue;
+    font-weight: 700;
+}
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+footer h2{
+     font-family: "Lobster", sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color:rgb(255, 89, 89) ;
+}
+footer p{
+    font-size: 14px;
+    color:rgb(217, 219, 225);
+}
 
 
 
@@ -111,6 +207,7 @@ header {
 .tk-container:nth-child(4){
     margin-left: 100px;
 }
+
 }
 /* mobile */
 @media (max-width: 768px) {
@@ -123,5 +220,7 @@ header {
   line-height: 2rem;
 }
 
-
+.section-2-container{
+    flex-direction: column;
+}
 }
